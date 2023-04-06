@@ -1,0 +1,29 @@
+/* src/components/List.module.css */
+.listTitle {
+    color: #FFFFFF;
+    font-size: 2.55rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .loading {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

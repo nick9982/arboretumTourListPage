@@ -1,0 +1,115 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, max-height 0.3s ease;
+  width: calc(100% - 60px);
+  max-width: 100%;
+  min-height: 2.2rem;
+  /* max-height: 50px; */
+  color: #000000;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.expandedListItem {
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: auto;
+  /* transition: max-height 0.3s ease; */
+  /* max-height: 500px; */
+}
+
+.leftSection {
+  width: 25%;
+  margin-right: 15px;
+}
+
+.nodes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: .75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.onlyTopNodeVisible {
+  display: none;
+}
+
+.nodes > li:before {
+  content: "•";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tourName {
+  font-size: 1.5rem;
+}
+
+.centerSection {
+  width: 50%;
+}
+
+.description {
+  margin: 0.5rem 0;
+}
+
+.rightSection {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.caret {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #4B08A1;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.noDecoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listItem:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .leftSection {
+    width: 35%;
+  }
+
+  .centerSection {
+    width: 45%;
+  }
+
+  .rightSection {
+    width: 20%;
+  }
+}
