@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ListItem.module.css';
 
 const ListItem = ({ item }) => {
@@ -56,7 +57,7 @@ const ListItem = ({ item }) => {
       {expanded && (
         <div className={styles.rightSection}>
           <span className={`${styles.caret} material-icons`}>chevron_left</span>
-          <button className={styles.button} onClick={seeItems}>View Map</button>
+          <button className={styles.button} onClick={seeItems}><Link to={`/map/${item.themeId}`}>View Map</Link></button>
           <button className={styles.button}><a href={url.href} className={styles.noDecoration}>Take Tour</a></button>
         </div>
       )}
