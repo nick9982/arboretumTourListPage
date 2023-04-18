@@ -15,7 +15,7 @@ const fetchTourItems = async () => {
 
 export default function MapLoader(){
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: key,
+        googleMapsApiKey: "AIzaSyDX7Tc93ekLzvq-vAf-1UnA2ic87KzgsYg",
     });
 
     if(!isLoaded) return <div>Loading...</div>;
