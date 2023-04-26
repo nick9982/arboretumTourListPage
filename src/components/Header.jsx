@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <header className={styles.header}>
-      WSU Arboretum
+      <img src="./src/assets/logoArbor.png" className={styles.headerImage}></img>
     </header>
   );
 };

@@ -1,16 +1,15 @@
 /* src/Header.module.css */
 .header {
   background-color: #4B08A1;
-  color: #FFFFFF;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.5;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 80px;
-  width: 100%;
-  top: 0;
-  padding-left: 20px;
   box-sizing: border-box;
+}
+
+.headerImage{
+  max-width: 220px;
+  max-height: 50px;
+  padding-left: 18px;
 }
